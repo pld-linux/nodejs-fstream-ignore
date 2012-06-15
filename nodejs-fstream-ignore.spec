@@ -6,6 +6,7 @@ License:	MIT
 Group:		Development/Libraries
 URL:		https://github.com/isaacs/fstream-ignore
 Source0:	http://registry.npmjs.org/fstream-ignore/-/fstream-ignore-%{version}.tgz
+# Source0-md5:	745df91e15f9a64a912c2cd670ca0584
 BuildRequires:	rpmbuild(macros) >= 1.634
 Requires:	nodejs
 Requires:	nodejs-fstream
