@@ -1,17 +1,19 @@
 Summary:	A thing for ignoring files based on globs
 Name:		nodejs-fstream-ignore
-Version:	0.0.5
+Version:	1.0.0
 Release:	1
-License:	MIT
+License:	ISC
 Group:		Development/Libraries
-URL:		https://github.com/isaacs/fstream-ignore
 Source0:	http://registry.npmjs.org/fstream-ignore/-/fstream-ignore-%{version}.tgz
-# Source0-md5:	745df91e15f9a64a912c2cd670ca0584
+# Source0-md5:	3d59f1c3c501aaa5d9ec283fd6a2fd0d
+URL:		https://github.com/isaacs/fstream-ignore
 BuildRequires:	rpmbuild(macros) >= 1.634
 Requires:	nodejs
 Requires:	nodejs-fstream
-Requires:	nodejs-inherits
-Requires:	nodejs-minimatch
+Requires:	nodejs-inherits < 3
+Requires:	nodejs-inherits >= 2
+Requires:	nodejs-minimatch < 2
+Requires:	nodejs-minimatch >= 1.0.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
